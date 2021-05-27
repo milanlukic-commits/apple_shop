@@ -2,7 +2,7 @@
 :root {
     --bodyFont: 'Lato', sans-serif;
     --headings: 'Poppins', sans-serif;
-    --gray: #515365;
+    --gray1: #515365;
     --gray2: #4e5062;
     --gray3: #4b4d5e;
     --gray4: #484a5a;
@@ -28,4 +28,152 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--headings);
+}
+a {
+    transition: var(--transition);
+}
+button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 1.2 rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    transition: var(--transition);
+}
+
+/* nav */
+nav {
+    text-align: center;
+    background: linear-gradient(to right, var(--purple), var(--yellow));
+    height: 55px;
+    line-height: 55px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li a {
+    color: var(--white);
+    margin: 30px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: var(--purple);
+}
+nav i {
+    font-size: 2rem;
+    position: relative;
+    top: 5px;
+}
+
+/* header */
+header {
+    background-image: linear-gradient(rgba(110, 37, 148, .9), rgba(110, 37, 148, .9)), url(img/header.jpg);
+    padding: 200px;
+    background-position: center;
+    background-size: cover;
+    color: var(--white);
+    text-align: center;
+}
+header h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+header h1::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 80px;
+    background: var(--yellow);
+    margin: 30px auto;
+}
+header h4 {
+    font-size: 1.4rem;
+}
+header button {
+    background: var(--white);
+    color: var(--purple)
+}
+header button:hover {
+    background: var(--yellow);
+}
+
+/* about */
+.about {
+    color: var(--white);
+}
+.about article div {
+    width: 50%;
+    float: left;
+    padding: 60px;
+}
+.about i {
+    color: var(--yellow);
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.about h2, .about p {
+    margin-bottom: 20px;
+}
+.about button {
+    background: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+}
+.about button:hover {
+    background: var(--yellow);
+    color: var(--text);
+}
+
+/* products */
+.clearfix {
+    clear: "both";
+    border-bottom: 1px solid lightgray;
+}
+.products article:nth-child(1) div:nth-child(1) {
+    background-image: url(img/mac.jpg);
+    background-position: center;
+    background-size: cover;
+    float: left;
+    width: 40%;
+    height: 50vh;
+}
+.products article:nth-child(1) div:nth-child(2),
+.products article:nth-child(5) div:nth-child(2) {
+    width: 60%;
+    float: left;
+    height: 50vh;
+    padding: 7%;
+}
+.products article:nth-child(3) div:nth-child(1) {
+    width: 60%;
+    float: left;
+    height: 50vh;
+    padding: 7%;
+}
+.products article:nth-child(3) div:nth-child(2) {
+    width: 40%;
+    float: right;
+    height: 50vh;
+    background-image: url(img/ipad.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.products article:nth-child(5) div:nth-child(1) {
+    background-image: url(img/iphone.jpg);
+    background-position: center;
+    background-size: cover;
+    float: left;
+    width: 40%;
+    height: 50vh;
+}
+.products h3::after {
+    display: block;
+    content: "";
+    height: 4px;
+    width: 80px;
+    background: var(--text);
+    margin: 30px 0;
 }
