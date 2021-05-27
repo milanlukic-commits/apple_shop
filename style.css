@@ -148,18 +148,18 @@ header button:hover {
     padding: 7%;
 }
 .products article:nth-child(3) div:nth-child(1) {
-    width: 60%;
-    float: left;
-    height: 50vh;
-    padding: 7%;
-}
-.products article:nth-child(3) div:nth-child(2) {
     width: 40%;
     float: right;
     height: 50vh;
     background-image: url(img/ipad.jpg);
     background-position: center;
     background-size: cover;
+}
+.products article:nth-child(3) div:nth-child(2) {
+    width: 60%;
+    float: left;
+    height: 50vh;
+    padding: 7%;
 }
 .products article:nth-child(5) div:nth-child(1) {
     background-image: url(img/iphone.jpg);
