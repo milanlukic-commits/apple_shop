@@ -39,8 +39,6 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     border: none;
-}
-button:hover {
     transition: var(--transition);
 }
 
@@ -95,7 +93,7 @@ header h4 {
 }
 header button {
     background: var(--white);
-    color: var(--purple)
+    color: var(--purple);
 }
 header button:hover {
     background: var(--yellow);
@@ -178,13 +176,17 @@ header button:hover {
     height: 50vh;
 }
 
-.products h3::after {
+.products h3::after,
+footer h3::after {
     display: block;
     content: "";
     height: 4px;
     width: 80px;
     background: var(--text);
     margin: 30px 0;
+}
+.products h3 {
+    font-size: 2rem;
 }
 
 /* cta */
@@ -207,4 +209,47 @@ header button:hover {
 .cta button:hover {
     background: var(--text);
     color: var(--white);
+}
+
+/* footer */
+footer {
+    padding: 60px;
+    background: var(--text);
+    color: var(--white);
+}
+footer h3::after {
+    background: var(--yellow);
+}
+footer article:first-child {
+    float: left;
+    width: 55%;
+}
+footer article:last-child {
+    float: right;
+    width: 40%;
+}
+footer::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+footer button {
+    background: transparent;
+    border: 2px solid var(--yellow);
+    color: var(--yellow);
+}
+footer button:hover {
+    background: var(--yellow);
+    color: var(--text);
+}
+footer ul {
+    list-style: none;
+    line-height: 2;
+}
+footer a {
+    text-decoration: none;
+    color: var(--white);
+}
+footer a:hover {
+    color: var(--yellow);
 }
